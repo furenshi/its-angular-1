@@ -78,6 +78,8 @@ export class OrdiniComponent {
             this.h = this.drinksIntoCart.indexOf(item);
             console.log(this.h);
 
+            item.selected = true
+
             for (const iterator of this.drinksIntoCart) {
                 if (iterator.idDrink === iterator.idDrink) {
                     this.checkColor = true;
@@ -96,6 +98,7 @@ export class OrdiniComponent {
 
     removeItem(drink: any) {
         this.drinksIntoCart.splice(this.drinksIntoCart.indexOf(drink), 1);
+        drink.selected = false
     }
 
     warningCart() {

@@ -89,8 +89,8 @@
               <div
                 class="card-body"
                 [ngClass]="{
-                  'bg-white': !checkColor,
-                  'bg-primary': checkColor
+                  'bg-white': !drink.selected,
+                  'bg-primary': drink.selected
                 }"
               >
                 <h5 class="card-title">{{ drink.strDrink }}</h5>
