@@ -4,33 +4,40 @@
   </div>
 </nav>
 
-
 <h1>Search</h1>
-    <div class="input-group">
-      <form>
-        <div class="row mb-3">
-          <label for="drinkName" class="col-sm-4 col-form-label">Drink name</label>
-          <div class="col-sm-8">
-            <input type="text" class="form-control" 
-            id="drinkName" 
-            name="drinkName" 
-            [(ngModel)]="jsonIn.name"
-                    placeholder="inserire un termine di ricerca">
-          </div>
-        </div>
-        <div class="row mb-3">
-          <label for="inputPassword3" class="col-sm-4 col-form-label">Ingrediente</label>
-          <div class="col-sm-8">
-            <select class="form-control" [(ngModel)]="jsonIn.ingredient" id="ingredient" name="ingredient">
-              <option></option>
-            </select>
-          </div>
-        </div>
+<div class="input-group">
+  <form>
+    <div class="row mb-3">
+      <label for="drinkName" class="col-sm-4 col-form-label">Drink name</label>
+      <div class="col-sm-8">
+        <input
+          type="text"
+          class="form-control"
+          id="drinkName"
+          name="drinkName"
+          [(ngModel)]="jsonIn.name"
+          placeholder="inserire un termine di ricerca"
+        />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputPassword3" class="col-sm-4 col-form-label"
+        >Ingrediente</label
+      >
+      <div class="col-sm-8">
+        <select
+          class="form-control"
+          [(ngModel)]="jsonIn.ingredient"
+          id="ingredient"
+          name="ingredient"
+        >
+          <option></option>
+        </select>
+      </div>
+    </div>
+  </form>
 
-
-      </form>
-
-<!-- <div class="row">
+  <!-- <div class="row">
   <div class="col-sm-12 col-md-4 col-lg-3 my-2"
       *ngFor="let drink of drinks"
       role="button"
@@ -48,3 +55,4 @@
     </div>
   </div>
 </div> -->
+</div>
